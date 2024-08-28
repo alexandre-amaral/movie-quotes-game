@@ -10,6 +10,8 @@
 <body>
     <div class="container text-center my-5">
         <h1 class="display-4 text-light mb-4">Guess the Movie</h1>
+        <div id="streak" class="text-light mb-4">Streak: 0</div>
+        <div id="timer" class="text-warning mb-3">Time Left: 30s</div>
         <div id="quote-container" class="p-4 bg-dark rounded shadow">
             <blockquote class="blockquote text-light mb-4">
                 <p id="quote" class="mb-0">Loading...</p>
@@ -21,7 +23,6 @@
                 <button class="btn btn-warning" onclick="skipQuote()">Skip</button>
             </div>
             <p id="result" class="text-info fw-bold mt-3"></p>
-            <button id="next-quote" class="btn btn-primary mt-4 d-none" onclick="nextQuote()">Next Quote</button>
         </div>
     </div>
     <script src="scripts/app.js"></script>

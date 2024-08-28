@@ -25,6 +25,16 @@ h1 {
     text-align: center;
 }
 
+#streak {
+    font-size: 1.5em; /* Streak counter size */
+    color: #f1f1f1; /* Light text */
+}
+
+#timer {
+    font-size: 1.5em; /* Timer size */
+    color: #ffc107; /* Yellow text */
+}
+
 #quote-container {
     max-width: 700px; /* Increased width for better spacing */
     margin: auto;
@@ -81,37 +91,4 @@ blockquote::after {
     margin-top: 20px;
     font-size: 1.4em; /* Larger result text */
     font-weight: bold;
-}
-
-#next-quote {
-    display: block;
-    margin: 40px auto 0; /* Increased space before and after the next button */
-    padding: 15px 30px; /* Larger padding for better clickability */
-    font-size: 1.2em; /* Larger text for button */
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 2.5em; /* Adjust heading size for smaller screens */
-    }
-
-    blockquote {
-        font-size: 1.4em; /* Adjust quote size for smaller screens */
-        padding: 25px 30px; /* Adjust padding for smaller screens */
-    }
-
-    blockquote::before,
-    blockquote::after {
-        font-size: 3em; /* Adjust quotation mark size for smaller screens */
-    }
-
-    .option-button {
-        font-size: 1.1em; /* Adjust button text size for smaller screens */
-        padding: 12px; /* Adjust padding for smaller screens */
-    }
-
-    #next-quote {
-        font-size: 1.1em; /* Adjust button text size for smaller screens */
-        padding: 12px 20px; /* Adjust padding for smaller screens */
-    }
 }
