@@ -25,6 +25,7 @@ function generateOptions() {
     const optionsContainer = document.getElementById('options');
     optionsContainer.innerHTML = '';
 
+    // Create an array with the correct answer and two random incorrect answers
     const options = [currentQuote.movie];
     while (options.length < 3) {
         const randomMovie = quotes[Math.floor(Math.random() * quotes.length)].movie;
@@ -33,8 +34,10 @@ function generateOptions() {
         }
     }
 
+    // Shuffle the options
     options.sort(() => Math.random() - 0.5);
 
+    // Create buttons for each option
     options.forEach(option => {
         const button = document.createElement('button');
         button.classList.add('btn', 'btn-outline-light', 'btn-lg', 'w-100', 'option-button');
